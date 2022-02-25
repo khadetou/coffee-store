@@ -1,3 +1,10 @@
+html {
+  @apply h-full;
+}
+body {
+  @apply bg-grad bg-no-repeat h-full text-[#373b64];
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

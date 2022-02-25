@@ -1,14 +1,19 @@
-import { FC } from "react"
+import { FC } from "react";
+import Seo from "./Seo";
 
-interface LayoutProps{
-    children: React.ReactNode
+interface LayoutProps {
+  children: React.ReactNode;
 }
 
-
-const Layout:FC<LayoutProps> = ({children}) => {
+const Layout: FC<LayoutProps> = ({ children }) => {
   return (
-    <main>{children}</main>
-  )
-}
+    <>
+      <Seo />
+      <main className="h-screen flex justify-center items-center">
+        {children}
+      </main>
+    </>
+  );
+};
 
-export default Layout
+export default Layout;

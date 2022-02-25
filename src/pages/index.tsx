@@ -1,12 +1,12 @@
-import type { NextPage } from 'next'
-
+import type { NextPage } from "next";
+import Banner from "../components/Banner";
 
 const Home: NextPage = () => {
   return (
-    <div >
-        <h1 className="text-2xl font-thin underline text-red-700">Hello world!</h1>
+    <div>
+      <Banner />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
